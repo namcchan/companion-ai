@@ -4,7 +4,7 @@ import { Menu, Sparkle } from 'lucide-react';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import { ModeToggle } from './mode-toggle';
+import { ThemeToggle } from './theme-toggle';
 
 const font = Poppins({
   weight: '600',
@@ -31,7 +31,7 @@ export const Navbar = () => {
         <Button size="sm" variant="premium">
           Upgrade <Sparkle className="h4 w-4 fill-white ml-2" />
         </Button>
-        <ModeToggle />
+        <ThemeToggle />
         <UserButton />
       </div>
     </div>
